@@ -1,5 +1,8 @@
 #pragma once
 
+#include <iostream>
+#include <random>
+
 struct Position
 {
 	int x;
@@ -9,7 +12,7 @@ struct Position
 class Zombie
 {
 
-private:
+protected:
 
 	// Attribute
 
@@ -43,6 +46,10 @@ public:
 	void setLebenspunkte(unsigned Plebenspunkte);
 
 	void setPosition(Position *Pposition);
+
+	// Methoden
+
+	virtual bool WaffeAbfeuern(Position *Pposition)=0;
 
 };
 
