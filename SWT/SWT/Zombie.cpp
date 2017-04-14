@@ -18,3 +18,18 @@ Zombie::Zombie()
 Zombie::~Zombie()
 {
 }
+
+unsigned Zombie::getLebenspunkte()
+{
+	return this->Zlebenspunkte;
+}
+
+Position Zombie::getPosition()
+{
+	return this->Zposition;
+}
+
+int Zombie::getEmpfindlichkeit()
+{
+	return this->Zempfindlichkeit;
+}

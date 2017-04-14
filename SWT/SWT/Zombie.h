@@ -32,6 +32,11 @@ public:
 
 	// Getter/Setter
 
+	unsigned getLebenspunkte();
+
+	Position getPosition();
+
+	int getEmpfindlichkeit();
 
 };
 
