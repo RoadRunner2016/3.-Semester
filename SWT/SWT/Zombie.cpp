@@ -33,3 +33,14 @@ int Zombie::getEmpfindlichkeit()
 {
 	return this->Zempfindlichkeit;
 }
+
+void Zombie::setLebenspunkte(unsigned Plebenspunkte)
+{
+	Zlebenspunkte = Plebenspunkte;
+}
+
+void Zombie::setPosition(Position *Pposition)
+{
+	Zposition.x = Pposition->x;
+	Zposition.y = Pposition->y;
+}

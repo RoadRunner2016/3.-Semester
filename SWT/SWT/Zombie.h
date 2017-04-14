@@ -30,13 +30,19 @@ public:
 	Zombie();
 	~Zombie();
 
-	// Getter/Setter
+	// Getter
 
 	unsigned getLebenspunkte();
 
 	Position getPosition();
 
 	int getEmpfindlichkeit();
+
+	// Setter
+
+	void setLebenspunkte(unsigned Plebenspunkte);
+
+	void setPosition(Position *Pposition);
 
 };
 
