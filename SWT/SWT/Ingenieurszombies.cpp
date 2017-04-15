@@ -1,7 +1,9 @@
 #include "Ingenieurszombies.h"
 
 
-
+Ingenieurszombies::Ingenieurszombies(unsigned kLebenspunkte, Position kPosition, int kEmpfindlichkeit)
+{
+}
 
 bool Ingenieurszombies::WaffeAbfeuern(Position * Pposition)
 {
@@ -35,19 +37,12 @@ bool Ingenieurszombies::WaffeAbfeuern(Position * Pposition)
 		return false;
 }
 
-Ingenieurszombies::Ingenieurszombies(unsigned Klebenspunkte, Position Kposition, int Kempfindlichkeit)
-{
-
-	this->Zlebenspunkte = Klebenspunkte;
-	this->Zposition = Kposition;
-	this->Zempfindlichkeit = Kempfindlichkeit;
-}
-
 Ingenieurszombies::Ingenieurszombies()
 {
 }
 
-
 Ingenieurszombies::~Ingenieurszombies()
 {
 }
+
+

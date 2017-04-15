@@ -2,12 +2,9 @@
 
 #include <iostream>
 #include <random>
-
-struct Position
-{
-	int x;
-	int y;
-};
+#include "Mechanic.h"
+#include "Veganer.h"
+#include "Position.h"
 
 class Zombie
 {
@@ -20,18 +17,21 @@ protected:
 	Position Zposition;
 	int Zempfindlichkeit;
 
+	// Komposition (Zeiger)
+	
+	/*
+	Mechanic* Mstil;
+	Veganer* Vstil;
+	*/
 public:
+
+
 
 	enum Zempfindlichkeit{Tagaktiv, Dämmerungsaktiv, Nachtaktiv};
 
 	// Konstruktor
 
 	Zombie(unsigned kLebenspunkte, Position kPosition, int kEmpfindlichkeit);
-
-	// Standardkonstruktor
-
-	Zombie();
-	~Zombie();
 
 	// Getter
 
@@ -49,7 +49,17 @@ public:
 
 	// Methoden
 
-	virtual bool WaffeAbfeuern(Position *Pposition)=0;
+	virtual bool WaffeAbfeuern(Position *Pposition) = 0;
+
+	bool Mattack();
+
+	bool Vattack();
+
+	// Standardkonstruktoren
+
+	Zombie();
+	~Zombie();
+
 
 };
 

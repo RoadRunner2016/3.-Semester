@@ -3,15 +3,16 @@
 #include <random>
 
 
-class Ingenieurszombies :
-	public Zombie
+class Ingenieurszombies : public Zombie
 {
 
 public:
 
-	bool WaffeAbfeuern(Position *Pposition);
+	Position Test;
 
-	Ingenieurszombies(unsigned Klebenspunkte, Position Kposition, int Kempfindlichkeit);
+Ingenieurszombies(unsigned kLebenspunkte, Position kPosition, int kEmpfindlichkeit);
+
+	bool WaffeAbfeuern(Position *Pposition);
 
 	Ingenieurszombies();
 	~Ingenieurszombies();

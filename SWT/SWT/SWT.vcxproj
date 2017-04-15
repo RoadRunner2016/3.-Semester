@@ -21,10 +21,16 @@
   <ItemGroup>
     <ClCompile Include="Ingenieurszombies.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Mechanic.cpp" />
+    <ClCompile Include="Position.cpp" />
+    <ClCompile Include="Veganer.cpp" />
     <ClCompile Include="Zombie.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Ingenieurszombies.h" />
+    <ClInclude Include="Mechanic.h" />
+    <ClInclude Include="Position.h" />
+    <ClInclude Include="Veganer.h" />
     <ClInclude Include="Zombie.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
