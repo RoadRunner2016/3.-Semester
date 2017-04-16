@@ -8,6 +8,7 @@ bool Veganer::Vattack()
 
 Veganer::Veganer()
 {
+	std::cout << " Veganer erstellt! " << std::endl;
 }
 
 

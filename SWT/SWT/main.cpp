@@ -31,9 +31,11 @@ Ingenieurszombies Klaus(50, Test,Zombie::Tagaktiv);
 		case 2:
 
 			Klaus.Mattack();
+			Klaus.Vattack();
 
 			break;
 		case 3:
+
 			std::cout << " Programm beendet " << std::endl;
 			break;
 		default:

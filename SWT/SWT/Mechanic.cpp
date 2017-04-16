@@ -8,6 +8,7 @@ bool Mechanic::Mattack()
 
 Mechanic::Mechanic()
 {
+	std::cout << " Mechanicer erstellt! " << std::endl;
 }
 
 

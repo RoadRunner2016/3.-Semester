@@ -17,13 +17,15 @@ protected:
 	Position Zposition;
 	int Zempfindlichkeit;
 
-	// Komposition (Zeiger)
 	
-	/*
-	Mechanic* Mstil;
-	Veganer* Vstil;
-	*/
+
+	
+
 public:
+
+	// Komposition (Zeiger)
+	Mechanic *Mstil = NULL;
+	Veganer *Vstil = NULL;
 
 
 

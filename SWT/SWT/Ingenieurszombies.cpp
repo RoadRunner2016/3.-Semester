@@ -1,8 +1,9 @@
 #include "Ingenieurszombies.h"
 
 
-Ingenieurszombies::Ingenieurszombies(unsigned kLebenspunkte, Position kPosition, int kEmpfindlichkeit)
+Ingenieurszombies::Ingenieurszombies(unsigned kLebenspunkte, Position kPosition, int kEmpfindlichkeit):Zombie(kLebenspunkte, kPosition, kEmpfindlichkeit)
 {
+	std::cout << " Ing.Zombiekonstruktor gestartet! " << std::endl;
 }
 
 bool Ingenieurszombies::WaffeAbfeuern(Position * Pposition)
